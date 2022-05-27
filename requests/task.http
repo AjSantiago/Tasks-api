@@ -1,0 +1,30 @@
+GET http://localhost:3000/api/tasks
+
+###
+GET http://localhost:3000/api/tasks?page=0&size=1
+
+###
+GET http://localhost:3000/api/tasks/628dc3bdf4347860547b7b0b
+
+###
+GET http://localhost:3000/api/tasks/done
+
+###
+POST http://localhost:3000/api/tasks
+Content-Type: application/json
+
+{
+  "title": "Hacer un sitio web en PHP",
+  "description": "Trabajo freelance"
+}
+
+###
+DELETE http://localhost:3000/api/tasks/628dc3bdf4347860547b7b0b
+
+###
+PUT http://localhost:3000/api/tasks/628e9b740f101d5d56f2b611
+Content-Type: application/json
+
+{
+  "title": "Hacer un sitio web en PHP"
+}
